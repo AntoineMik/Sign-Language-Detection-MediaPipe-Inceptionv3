@@ -19,4 +19,4 @@ COPY ./webapp.py /project
 # with the option -e
 ENV JUPYTER_ENABLE_LAB=yes
 
-CMD ["python3", "project.py"]
+CMD ["python3", "webapp.py"]
