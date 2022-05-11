@@ -11,6 +11,6 @@ COPY ./sign-language-detection.ipynb /project/notebooks/
 COPY ./server.py /project
 COPY ./helpers.py /project
 COPY ./webapp.py /project
-
+COPY ./README.md /project
 
 CMD python server.py
