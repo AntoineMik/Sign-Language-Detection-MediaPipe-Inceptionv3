@@ -41,7 +41,7 @@ num_classes = len(class_names)
 background_img = cv2.imread("mod_background_black.jpg")
 
 # Load the Model
-model = load_model("trained_models/sign_lang_detect_inceptv3_model_segmented_large_dataset_plus5.h5")
+model = load_model("sign_lang_detect_inceptv3_model_segmented_large_dataset_plus5.h5")
 
 
 # Function to segment images using MediaPipe
