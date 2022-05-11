@@ -13,10 +13,4 @@ COPY ./helpers.py /project
 COPY ./webapp.py /project
 
 
-
-#Let's define this parameter to install jupyter lab 
-# notetebook command so we don't have to use it when running the container 
-# with the option -e
-ENV JUPYTER_ENABLE_LAB=yes
-
-CMD ["python3", "server.py"]
+CMD python server.py
