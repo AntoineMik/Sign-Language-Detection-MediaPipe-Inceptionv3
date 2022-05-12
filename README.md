@@ -22,16 +22,16 @@ Step 5: Use the Model to build a live hand sign transcription.
 
 1 - Generate random images from the dataset.
 
-![Alt text](\images\user_rand.jpg?raw=true "Random Generated Images")
+![Alt text](/images/user_rand.jpg?raw=true "Random Generated Images")
 
 2 - Process the images with MediaPipe to detect hand landmarks.
 (Note: Not all images can be processed with MediaPipe. Bad images are ignored during this step)
 
-![Alt text](\images\process_rand.jpg?raw=true "Processed Images")
+![Alt text](/images/process_rand.jpg?raw=true "Processed Images")
 
 2 - Predict the processed images using the build model
 
-![Alt text](\images\user_pred.jpg?raw=true "Processed Images")
+![Alt text](/images/user_pred.jpg?raw=true "Processed Images")
 
 #### Technical concepts
 
