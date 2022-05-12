@@ -33,7 +33,6 @@ Step 5: Use the Model to build a live hand sign transcription.
 
 ![Alt text](/images/user_pred.jpg?raw=true "Processed Images")
 
-
 #### Technical concepts
 
 Computer Vision, 
