@@ -3,7 +3,7 @@ FROM maiv/handsigndetect:latest
 LABEL Antoine Vignon <vignonantoinem@gmail.com>
 
 WORKDIR /project
-RUN pip install flask transformers torch mediapipe
+RUN pip install flask transformers torch mediapipe streamlit
 
 COPY ./index.html /project
 COPY ./sign-language-detect-mediapipe.ipynb /project/notebooks/
