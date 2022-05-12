@@ -13,4 +13,6 @@ COPY ./helpers.py /project
 COPY ./webapp.py /project
 COPY ./README.md /project
 
-CMD python3 server.py
+EXPOSE 5000
+
+CMD ["maiv", "server:app", "--host", "0.0.0.0", "--port", "5000"]
