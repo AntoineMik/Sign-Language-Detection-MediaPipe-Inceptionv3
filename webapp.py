@@ -6,12 +6,15 @@ import json
 from PIL import Image
 import os
 
+#API endpoint
+api_url = "http://10.0.1.5:5000"
+
 # Get server status
 def send_request(length):
     files = {
         'length': (None, length),
     }
-    response = requests.post('http://10.0.1.5:5000', files=files)
+    response = requests.post(api_url, files=files)
     status_code = response.status_code
 
     return status_code, response
@@ -21,7 +24,7 @@ def request_rand_img(length):
     files = {
         'length': (None, length),
     }
-    response = requests.post('http://10.0.1.5:5000/random/images', files=files)
+    response = requests.post(api_url + '/random/images', files=files)
     status_code = response.status_code
 
     return status_code, response
@@ -31,7 +34,7 @@ def request_process_img(length):
     files = {
         'length': (None, length),
     }
-    response = requests.post('http://10.0.1.5:5000/process/images', files=files)
+    response = requests.post(api_url + '/process/images', files=files)
     status_code = response.status_code
 
     return status_code, response
@@ -41,7 +44,7 @@ def request_predict_img(length):
     files = {
         'length': (None, length),
     }
-    response = requests.post('http://10.0.1.5:5000/predict/images', files=files)
+    response = requests.post(api_url + '/predict/images', files=files)
     status_code = response.status_code
 
     return status_code, response
@@ -52,7 +55,7 @@ def request_rand_process_img(length):
     files = {
         'length': (None, length),
     }
-    response = requests.post('http://10.0.1.5:5000/random', files=files)
+    response = requests.post(api_url + '/random', files=files)
     status_code = response.status_code
 
     return status_code, response
