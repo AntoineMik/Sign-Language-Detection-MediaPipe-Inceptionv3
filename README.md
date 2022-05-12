@@ -6,6 +6,7 @@ The ability of a system to perceive and detect sign language is a vital componen
 
 ## Goal
 
+
 #### Technical concepts
 
 Computer Vision, 
