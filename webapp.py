@@ -7,7 +7,7 @@ from PIL import Image
 import os
 
 #API endpoint
-api_url = "http://10.0.1.5:5000"
+api_url = "http://127.0.0.1:5000"
 
 # Get server status
 def send_request(length):
