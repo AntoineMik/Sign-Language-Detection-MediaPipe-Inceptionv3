@@ -1,3 +1,7 @@
+import os
+import sys
+sys.path.append("/app")
+
 from helpers import *
 from flask import Flask
 from flask import jsonify

@@ -13,4 +13,4 @@ COPY ./helpers.py /project
 COPY ./webapp.py /project
 COPY ./README.md /project
 
-CMD python server.py
+CMD python3 server.py
